@@ -1,0 +1,6 @@
+1.pip install -r requirements.txt
+通过此命令安装所需要的环境 
+2.然后在命令行中输入 
+python detect_faces_video.py --prototxt deploy.prototxt.txt --model res10_300x300_ssd_iter_140000.caffemodel
+即可运行
+3.按p可退出程序
