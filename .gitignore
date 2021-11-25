@@ -265,3 +265,8 @@ model_para/best_model.pth
 model_para/checkpoint.pth
 model_para/lowest_loss.pth
 AlexNet/leaf/para
+stranger_detection/res10_300x300_ssd_iter_140000.caffemodel
+stranger_detection/emotion_dectection/res10_300x300_ssd_iter_140000.caffemodel
+emotion_dectection/res10_300x300_ssd_iter_140000.caffemodel
+stranger_detection/emotion_dectection/pretrained_ckpt
+emotion_dectection/pretrained_ckpt
