@@ -42,7 +42,7 @@ class LaneLineDetection:
             if len(contours[cnt]) > 5:
             # 椭圆拟合
                 (x, y), (a, b), degree = cv.fitEllipse(contours[cnt])
-            # 椭圆的角度小于5 或者 角度大于160 或者角度在80和160之间，剔除
+            # 椭圆的角度小于5 或者 角度大于160 或者角度在80和100之间，剔除
                 if degree< 5 or degree>160 or 80<degree<100:
                     continue
             # 不被以上的条件剔除的，在创建的空白图像上绘制该轮廓
@@ -123,12 +123,12 @@ class LaneLineDetection:
 def run(path):
     img = cv.imread(path)
     detector = LaneLineDetection()
-    cv.imshow("video-input", img)
+    cv.imshow("input", img)
     detector.process(img, 0)
     cv.waitKey(1)
 
 
 if __name__ == "__main__":
-    run('line.jpeg')
+    run('test1.jpg')
     cv.waitKey(0)
     cv.destroyAllWindows()
